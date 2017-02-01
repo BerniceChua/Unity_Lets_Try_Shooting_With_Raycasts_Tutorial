@@ -1836,14 +1836,14 @@ LineRenderer:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1505249017}
-  m_Enabled: 1
+  m_Enabled: 0
   m_CastShadows: 1
   m_ReceiveShadows: 1
   m_MotionVectors: 0
   m_LightProbeUsage: 0
   m_ReflectionProbeUsage: 0
   m_Materials:
-  - {fileID: 0}
+  - {fileID: 2100000, guid: 289272fd50ef48640a54cb9fa201118b, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1872,13 +1872,13 @@ LineRenderer:
       m_Curve:
       - serializedVersion: 2
         time: 0
-        value: 0.32191783
+        value: 1
         inSlope: 0
         outSlope: 0
         tangentMode: 0
       m_PreInfinity: 2
       m_PostInfinity: 2
-      m_RotationOrder: 0
+      m_RotationOrder: 4
     colorGradient:
       key0:
         serializedVersion: 2
