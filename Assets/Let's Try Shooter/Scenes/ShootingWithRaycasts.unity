@@ -1792,6 +1792,7 @@ GameObject:
   - component: {fileID: 1505249021}
   - component: {fileID: 1505249019}
   - component: {fileID: 1505249020}
+  - component: {fileID: 1505249022}
   m_Layer: 0
   m_Name: Gun
   m_TagString: Untagged
@@ -2008,6 +2009,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 0
+--- !u!114 &1505249022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1505249017}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e5e06fcc311670b469402f4f53143c1c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_weaponRange: 50
 --- !u!1001 &1535492403
 Prefab:
   m_ObjectHideFlags: 0

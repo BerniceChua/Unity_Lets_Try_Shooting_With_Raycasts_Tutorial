@@ -42,6 +42,13 @@ public class RaycastShoot : MonoBehaviour {
             // Physics.Raycast() returns a bool "true" I.I.F. it hits something.
             if (Physics.Raycast(rayOrigin, m_fpsCam.transform.forward, out hit, m_weaponRange)) {
                 m_laserLine.SetPosition(1, hit.point);
+
+                ShootableBox health = hit.collider.GetComponent<ShootableBox>();
+                if (health)
+                    health.Damage(m_gunDamage);
+
+                if (hit.rigidbody)
+                    hit.rigidbody.AddForce(-hit.normal * m_hitForce);
             } else {
                 m_laserLine.SetPosition(0, rayOrigin + (m_fpsCam.transform.forward * m_weaponRange));
             }
